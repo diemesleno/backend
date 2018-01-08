@@ -3,6 +3,8 @@ defmodule Re.Images do
   This module interfaces calls to Image data.
   """
 
+  require Logger
+
   import Ecto.Query
 
   alias Re.{
@@ -55,6 +57,20 @@ defmodule Re.Images do
     end
   end
 
-  def delete(image), do: Repo.delete(image)
+  def delete(image) do
+    case Repo.delete(image) do
+      {:ok, image} ->
+        delete_from_cloudinary(image)
+        {:ok, image}
+      error -> error
+    end
+  end
+
+  defp delete_from_cloudinary(%{filename: filename}) do
+    case Cloudex.delete(filename) do
+      {:ok, _} -> :ok
+      error -> Logger.warn("Error deleting image in cloudinary. Reason: #{inspect error}")
+    end
+  end
 
 end

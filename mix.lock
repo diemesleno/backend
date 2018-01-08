@@ -1,6 +1,8 @@
 %{"base64url": {:hex, :base64url, "0.0.1", "36a90125f5948e3afd7be97662a1504b934dd5dac78451ca6e9abf85a10286be", [], [], "hexpm"},
   "bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], [], "hexpm"},
   "certifi": {:hex, :certifi, "2.0.0", "a0c0e475107135f76b8c1d5bc7efb33cd3815cb3cf3dea7aefdd174dabead064", [:rebar3], [], "hexpm"},
+  "cloudex": {:hex, :cloudex, "1.0.1", "51ae96126ef17abb732692ef7bbd8a9c5b26fc01c4a893c42baa219ff9ac562c", [], [{:httpoison, "~> 0.13.0", [hex: :httpoison, repo: "hexpm", optional: false]}, {:poison, "~> 3.1.0", [hex: :poison, repo: "hexpm", optional: false]}, {:timex, "~> 3.1.7", [hex: :timex, repo: "hexpm", optional: false]}, {:tzdata, "~> 0.5.11", [hex: :tzdata, repo: "hexpm", optional: false]}], "hexpm"},
+  "combine": {:hex, :combine, "0.10.0", "eff8224eeb56498a2af13011d142c5e7997a80c8f5b97c499f84c841032e429f", [], [], "hexpm"},
   "comeonin": {:hex, :comeonin, "3.2.0", "cb10995a22aed6812667efb3856f548818c85d85394d8132bc116fbd6995c1ef", [], [{:elixir_make, "~> 0.4", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm"},
   "connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], [], "hexpm"},
   "cors_plug": {:hex, :cors_plug, "1.4.0", "c1c4fb68adf2fd1b4caccee978663edd58f62881627ab65b52ff56146945687f", [:mix], [{:plug, "> 0.14.0", [hex: :plug, repo: "hexpm", optional: false]}], "hexpm"},
@@ -35,5 +37,7 @@
   "sendgrid": {:hex, :sendgrid, "1.7.0", "a1c31fed719483b202d91ec7c8a5db79e1104dae04cb40e0c5dfe0bc53a0abeb", [:mix], [{:httpoison, ">= 0.11.0", [hex: :httpoison, repo: "hexpm", optional: false]}, {:poison, ">= 2.0.0 or >= 3.0.0", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.1", "28a4d65b7f59893bc2c7de786dec1e1555bd742d336043fe644ae956c3497fbe", [:make, :rebar], [], "hexpm"},
   "swoosh": {:hex, :swoosh, "0.12.0", "b320c83ce4561cdeec3f17903066e1e978905abe70f20b21bafa171e7178ac03", [], [{:cowboy, "~> 1.0", [hex: :cowboy, repo: "hexpm", optional: true]}, {:gen_smtp, "~> 0.12", [hex: :gen_smtp, repo: "hexpm", optional: true]}, {:hackney, "~> 1.9", [hex: :hackney, repo: "hexpm", optional: false]}, {:mime, "~> 1.1", [hex: :mime, repo: "hexpm", optional: false]}, {:plug, "~> 1.4", [hex: :plug, repo: "hexpm", optional: true]}, {:poison, "~> 1.5 or ~> 2.0 or ~> 3.0", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
+  "timex": {:hex, :timex, "3.1.24", "d198ae9783ac807721cca0c5535384ebdf99da4976be8cefb9665a9262a1e9e3", [], [{:combine, "~> 0.7", [hex: :combine, repo: "hexpm", optional: false]}, {:gettext, "~> 0.10", [hex: :gettext, repo: "hexpm", optional: false]}, {:tzdata, "~> 0.1.8 or ~> 0.5", [hex: :tzdata, repo: "hexpm", optional: false]}], "hexpm"},
+  "tzdata": {:hex, :tzdata, "0.5.15", "d49241b0ca52c0b7354cb28ab87d290c30270194a436f9dc649bdc56ba97ceb7", [], [{:hackney, "~> 1.0", [hex: :hackney, repo: "hexpm", optional: false]}], "hexpm"},
   "unicode_util_compat": {:hex, :unicode_util_compat, "0.3.1", "a1f612a7b512638634a603c8f401892afbf99b8ce93a45041f8aaca99cadb85e", [:rebar3], [], "hexpm"},
   "uuid": {:hex, :uuid, "1.1.8", "e22fc04499de0de3ed1116b770c7737779f226ceefa0badb3592e64d5cfb4eb9", [], [], "hexpm"}}

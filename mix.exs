@@ -19,7 +19,8 @@ defmodule Re.Mixfile do
   def application do
     [mod: {Re.Application, []},
      applications: [:phoenix, :phoenix_pubsub, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :comeonin, :swoosh, :scrivener_ecto]]
+                    :phoenix_ecto, :postgrex, :comeonin, :swoosh,
+                    :scrivener_ecto, :cloudex]]
   end
 
   # Specifies which paths to compile per environment.
@@ -43,6 +44,7 @@ defmodule Re.Mixfile do
      {:ex_machina, "~> 2.0", only: :test},
      {:swoosh, "~> 0.12.0"},
      {:scrivener_ecto, "~> 1.0"},
+     {:cloudex, "~> 1.0.0"},
    ]
   end
 

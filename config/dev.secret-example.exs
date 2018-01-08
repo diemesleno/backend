@@ -29,3 +29,8 @@ config :guardian, Guardian,
 config :re,
   to: "dev1@email.com|dev2@email.com",
   from: "admin@email.com"
+
+config :cloudex,
+  api_key: "my-api-key",
+  secret: "my-secret",
+  cloud_name: "my-cloud-name"
